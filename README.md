@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/icon.png" width="108" alt="Smilo" />
+
 # Smilo
 
 ### The PDF reader built for focus.
@@ -29,6 +31,37 @@ Try the full experience right in your browser — open any PDF from your device 
 |---|---|
 | **[Open the live demo →](https://comet-suite.github.io/smilo-pdf-viewer/)** | The complete app, ready to use |
 | **[Beta build (with release notice) →](https://comet-suite.github.io/smilo-pdf-viewer/smilo-beta.html)** | The preview build that shows the pre-release notice |
+
+## Screenshots
+
+<p align="center">
+  <img src="assets/screenshots/01-welcome.png" alt="Welcome screen" width="86%" />
+</p>
+
+<table>
+  <tr>
+    <td align="center"><img src="assets/screenshots/02-reader.png" alt="Reader with thumbnails" /></td>
+    <td align="center"><img src="assets/screenshots/03-whiteboard.png" alt="Whiteboard" /></td>
+  </tr>
+  <tr>
+    <td align="center"><sub><b>Reader</b> — thumbnails, outline and a precise tool dock</sub></td>
+    <td align="center"><sub><b>Whiteboard</b> — multi-page sketching with custom page colours</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="assets/screenshots/04-split-view.png" alt="Split view" /></td>
+    <td align="center"><img src="assets/screenshots/06-dark-mode.png" alt="Dark mode" /></td>
+  </tr>
+  <tr>
+    <td align="center"><sub><b>Split view</b> — the same document, two independent panes</sub></td>
+    <td align="center"><sub><b>Dark mode</b> — easy on the eyes, day or night</sub></td>
+  </tr>
+</table>
+
+<p align="center">
+  <img src="assets/screenshots/05-touch-mode.png" alt="Touch mode" width="320" />
+  <br />
+  <sub><b>Touch mode</b> — a floating dock and gestures, built for fingers</sub>
+</p>
 
 ## Features
 
