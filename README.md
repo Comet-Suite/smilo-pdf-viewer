@@ -9,7 +9,6 @@
 A modern PDF reader and annotation studio — read, mark up, split, sketch, and export.
 
 [![Status](https://img.shields.io/badge/status-beta-2563eb?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/#status)
-[![Release](https://img.shields.io/badge/release-coming%20soon-111827?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/#availability)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-0284c7?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/#availability)
 [![Demo](https://img.shields.io/badge/live-demo-e11d48?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/)
 
@@ -29,11 +28,10 @@ Try the full experience right in your browser — open any PDF from your device 
 
 | | |
 |---|---|
-| **[Open the live demo →](https://comet-suite.github.io/smilo-pdf-viewer/)** | The complete app, ready to use |
-| **[Beta build (with release notice) →](https://comet-suite.github.io/smilo-pdf-viewer/smilo-beta.html)** | The preview build that shows the pre-release notice |
+| **[Open the beta demo →](https://comet-suite.github.io/smilo-pdf-viewer/)** | The current beta build — the beta notice is shown on launch |
 
 > [!WARNING]
-> **Do not upload private or sensitive documents.** Never open personal files in the web demo — identity cards, passports, bank statements, tax or medical records, contracts, or anything containing personal data. Try Smilo with non-sensitive documents only.
+> **Do not upload private or sensitive documents.** Never open personal files in the web demo — identity cards, passports, bank statements, tax or medical records, contracts, or anything containing personal data. Try Smilo with non-sensitive documents only — until the full Windows version comes.
 
 ## Screenshots
 
@@ -108,7 +106,7 @@ Smilo is in **beta testing** and is **not yet released**. The desktop applicatio
 
 ## Status
 
-**Beta** — actively in testing. The feature set is in place and polish is in progress ahead of the Windows release. The live demo in this repository reflects the current beta build.
+**Beta** — actively in testing. The live demo in this repository reflects the current beta build.
 
 ## Feedback
 

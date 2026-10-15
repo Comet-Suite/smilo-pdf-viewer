@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Smilo</title>
+<title>Smilo — Beta</title>
 <meta name="theme-color" content="#0ea5e9" />
 
 <style>
@@ -973,6 +973,16 @@ body.dark .page.lnk-hot .lnk b.on{background:rgba(56,189,248,.2);box-shadow:inse
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 </head>
 <body>
+<div id="betaNotice" style="position:fixed;inset:0;z-index:2147483000;display:flex;align-items:center;justify-content:center;background:rgba(15,23,42,.55);padding:20px;font-family:system-ui,-apple-system,'Segoe UI',sans-serif">
+  <div style="background:#fff;border-radius:20px;box-shadow:0 24px 60px rgba(0,0,0,.35);max-width:440px;width:100%;padding:30px 28px;text-align:center">
+    <div style="display:inline-block;padding:5px 14px;border-radius:999px;background:#e0f2fe;color:#0284c7;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase">Beta testing</div>
+    <h2 style="margin:16px 0 10px;font-size:22px;color:#111827">Not released yet</h2>
+    <p style="margin:0 0 8px;font-size:15px;line-height:1.6;color:#4b5563">Smilo is still in <b>beta testing</b> and has not been officially released yet.</p>
+    <p style="margin:0 0 20px;font-size:15px;line-height:1.6;color:#4b5563">Coming soon &mdash; <b>Windows 10/11 only</b>.</p>
+    <button onclick="document.getElementById('betaNotice').remove()" style="appearance:none;border:none;cursor:pointer;padding:12px 28px;border-radius:999px;background:#0284c7;color:#fff;font:600 14.5px system-ui,-apple-system,'Segoe UI',sans-serif;box-shadow:0 4px 14px rgba(2,132,199,.35)">Continue to the preview</button>
+  </div>
+</div>
+
 
   <div class="canvas"></div>
 
