@@ -845,6 +845,7 @@ body.touch #ctxMenu{display:none!important}
 body.touch #wmBtn,body.touch #expBtn,body.touch [data-tool="snip"],body.touch [data-tool="sign"]{display:none!important}
 #splitBtn,#wbBtn{display:none!important}body.touch #splitBtn,body.touch #wbBtn{display:flex!important}
 body.touch.split #splitBtn,body.touch.wb-on #wbBtn{background:var(--accent-soft);color:var(--accent-strong)}
+body.touch.wb-on #toolbar{display:none}
 #splitView{position:absolute;top:0;bottom:0;left:50%;right:0;overflow:auto;z-index:1;display:none;background:var(--bg);border-left:2px solid var(--border);overscroll-behavior:contain;touch-action:pan-x pan-y}
 body.touch.split #splitView{display:block}
 body.touch.split #scroller{right:50%}
@@ -856,39 +857,40 @@ body.dark.inv .sp-page canvas{filter:invert(.9) hue-rotate(180deg)}
 #wbOverlay{position:fixed;inset:0;z-index:8;display:none;background:#fff}
 body.touch.wb-on #wbOverlay{display:block}
 #wbCv{position:absolute;inset:0;width:100%;height:100%;touch-action:none;display:block}
-#wbBar{position:absolute;top:12px;left:50%;transform:translateX(-50%);display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px;padding:8px 10px;background:var(--surface);border:1.5px solid var(--border);border-radius:20px;box-shadow:var(--shadow-pop);scale:var(--dock-s,1);z-index:2;max-width:min(600px,calc(100vw - 20px));box-sizing:border-box}
-#wbBar .wb-grp{display:flex;align-items:center;gap:4px}
-#wbBar .wb-sep{width:1px;height:24px;background:var(--divider);flex-shrink:0}
-#wbBar button{border:none;background:transparent;color:var(--text-muted);height:38px;min-width:38px;padding:0;display:inline-flex;align-items:center;justify-content:center;border-radius:12px;font-family:inherit;font-size:16px;font-weight:600;line-height:1;cursor:pointer;transition:background .15s,color .15s,transform .08s;flex-shrink:0}
+#wbBar{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);width:max-content;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:5px;padding:5px 8px;background:var(--surface);border:1.5px solid var(--border);border-radius:16px;box-shadow:var(--shadow-pop);scale:var(--dock-s,1);z-index:2;max-width:min(880px,calc(100vw - 20px));box-sizing:border-box}
+#wbBar .wb-grp{display:flex;align-items:center;gap:3px}
+#wbBar .wb-sep{width:1px;height:18px;background:var(--divider);flex-shrink:0}
+#wbBar button{border:none;background:transparent;color:var(--text-muted);height:32px;min-width:32px;padding:0;display:inline-flex;align-items:center;justify-content:center;border-radius:9px;font-family:inherit;font-size:14px;font-weight:600;line-height:1;cursor:pointer;transition:background .15s,color .15s,transform .08s;flex-shrink:0}
 #wbBar button:hover{background:var(--surface-hover);color:var(--text)}
 #wbBar button:active{transform:scale(.94)}
 #wbBar button.on{background:var(--accent-soft);color:var(--accent-strong)}
-#wbBar #wbSwatches{display:flex;align-items:center;gap:6px}
-#wbSwatches .wb-sw{width:24px;height:24px;min-width:24px;border-radius:50%;padding:0;border:2px solid var(--surface);box-shadow:0 0 0 1px var(--border);cursor:pointer;transition:transform .08s,box-shadow .15s;flex-shrink:0}
+#wbBar #wbSwatches{display:flex;align-items:center;gap:4px}
+#wbSwatches .wb-sw{width:20px;height:20px;min-width:20px;border-radius:50%;padding:0;border:2px solid var(--surface);box-shadow:0 0 0 1px var(--border);cursor:pointer;transition:transform .08s,box-shadow .15s;flex-shrink:0}
 #wbSwatches .wb-sw:hover{transform:scale(1.1)}
 #wbSwatches .wb-sw:active{transform:scale(.96)}
 #wbSwatches .wb-sw.on{box-shadow:0 0 0 2px var(--accent),0 0 0 4px var(--surface)}
-#wbSize{-webkit-appearance:none;appearance:none;width:96px;height:4px;border-radius:999px;background:var(--divider);outline:none;cursor:pointer;flex-shrink:0;margin:0 6px}
-#wbSize::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:20px;height:20px;border-radius:50%;background:var(--accent);border:3px solid var(--surface);box-shadow:0 0 0 1px var(--border);cursor:pointer}
-#wbSize::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:var(--accent);border:3px solid var(--surface);box-shadow:0 0 0 1px var(--border);cursor:pointer}
-#wbBar button#wbExport{height:38px;min-width:0;padding:0 16px;border-radius:999px;background:var(--accent);color:#fff;font-size:13px;white-space:nowrap;box-shadow:0 1px 4px rgba(0,0,0,.18)}
+#wbSize{-webkit-appearance:none;appearance:none;width:76px;height:4px;border-radius:999px;background:var(--divider);outline:none;cursor:pointer;flex-shrink:0;margin:0 4px}
+#wbSize::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:15px;height:15px;border-radius:50%;background:var(--accent);border:2.5px solid var(--surface);box-shadow:0 0 0 1px var(--border);cursor:pointer}
+#wbSize::-moz-range-thumb{width:12px;height:12px;border-radius:50%;background:var(--accent);border:2.5px solid var(--surface);box-shadow:0 0 0 1px var(--border);cursor:pointer}
+#wbBar button#wbExport{height:32px;min-width:0;gap:6px;padding:0 13px;border-radius:999px;background:var(--accent);color:#fff;font-size:12px;white-space:nowrap;box-shadow:0 1px 4px rgba(0,0,0,.18)}
+#wbBar button#wbExport .ic{width:13px;height:13px}
 #wbBar button#wbExport:hover{background:var(--accent);color:#fff;filter:brightness(1.08)}
 #wbBar button#wbExport:active{transform:scale(.97)}
-#wbBar .wb-pages{gap:2px}
-#wbPageN{min-width:44px;text-align:center;font-family:inherit;font-size:13px;font-weight:600;font-variant-numeric:tabular-nums;color:var(--text);user-select:none;-webkit-user-select:none}
-#wbBar button#wbBg{width:26px;height:26px;min-width:26px;border-radius:50%;border:2px solid var(--surface);box-shadow:0 0 0 1px var(--border);transition:transform .08s,box-shadow .15s}
+#wbBar .wb-pages{gap:1px}
+#wbPageN{min-width:38px;text-align:center;font-family:inherit;font-size:12px;font-weight:600;font-variant-numeric:tabular-nums;color:var(--text);user-select:none;-webkit-user-select:none}
+#wbBar button#wbBg{width:22px;height:22px;min-width:22px;border-radius:50%;border:2px solid var(--surface);box-shadow:0 0 0 1px var(--border);transition:transform .08s,box-shadow .15s}
 #wbBar button#wbBg:hover{transform:scale(1.1)}
 #wbBar button#wbBg:active{transform:scale(.96)}
-#wbBgPop{display:none;position:absolute;top:calc(100% + 10px);right:0;align-items:center;gap:6px;padding:8px 10px;background:var(--surface);border:1.5px solid var(--border);border-radius:16px;box-shadow:var(--shadow-pop);z-index:3}
+#wbBgPop{display:none;position:absolute;bottom:calc(100% + 10px);right:0;align-items:center;gap:5px;padding:7px 9px;background:var(--surface);border:1.5px solid var(--border);border-radius:14px;box-shadow:var(--shadow-pop);z-index:3}
 #wbBgPop.open{display:flex}
-#wbBgPop .wb-bgc{width:28px;height:28px;min-width:28px;padding:0;border-radius:50%;border:2px solid var(--surface);box-shadow:0 0 0 1px var(--border);cursor:pointer;transition:transform .08s,box-shadow .15s}
+#wbBgPop .wb-bgc{width:22px;height:22px;min-width:22px;padding:0;border-radius:50%;border:2px solid var(--surface);box-shadow:0 0 0 1px var(--border);cursor:pointer;transition:transform .08s,box-shadow .15s}
 #wbBgPop .wb-bgc:hover{transform:scale(1.1)}
 #wbBgPop .wb-bgc:active{transform:scale(.96)}
 #wbBgPop .wb-bgc.on{box-shadow:0 0 0 2px var(--accent),0 0 0 4px var(--surface)}
 #wbBgPop .wb-bgc.custom{background:conic-gradient(#ef4444,#f97316,#eab308,#22c55e,#0ea5e9,#6366f1,#a855f7,#ec4899,#ef4444);position:relative;overflow:hidden}
 #wbBgPop .wb-bgc.custom input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%;border:none;padding:0}
-@media (pointer:coarse){#wbBar button{height:42px;min-width:42px;font-size:17px}#wbBar button#wbExport{min-width:0;font-size:13.5px;padding:0 18px}#wbSwatches .wb-sw{width:28px;height:28px;min-width:28px}#wbSize{width:112px}}
-@media (max-width:480px){#wbBar{gap:6px;padding:7px 8px;border-radius:16px}#wbBar button{height:38px;min-width:38px;font-size:16px}#wbBar button#wbExport{min-width:0;font-size:13px;padding:0 12px}#wbSwatches .wb-sw{width:24px;height:24px;min-width:24px}#wbSize{width:80px}}
+@media (pointer:coarse){#wbBar button{height:36px;min-width:36px;font-size:15px}#wbBar button#wbExport{min-width:0;font-size:12.5px;padding:0 15px}#wbSwatches .wb-sw{width:24px;height:24px;min-width:24px}#wbSize{width:88px}}
+@media (max-width:480px){#wbBar{gap:4px;padding:5px 6px;border-radius:14px}#wbBar button{height:33px;min-width:33px;font-size:14px}#wbBar button#wbExport{min-width:0;font-size:12px;padding:0 11px}#wbSwatches .wb-sw{width:21px;height:21px;min-width:21px}#wbSize{width:68px}}
 
 .page canvas.sl{mix-blend-mode:multiply}
 body.dark.inv .page canvas.sl{mix-blend-mode:screen}
@@ -1017,8 +1019,8 @@ body.dark .page.lnk-hot .lnk b.on{background:rgba(56,189,248,.2);box-shadow:inse
 <div id="wbOverlay">
   <div id="wbBar">
     <div class="wb-grp">
-      <button id="wbPen" class="on" title="Pen"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 3l4 4L8 20l-5 1 1-5z"/></svg></button>
-      <button id="wbEraser" title="Eraser"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 20H9L4 15 14 5l6 6-7 7"/></svg></button>
+      <button id="wbPen" class="on" title="Pen"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></button>
+      <button id="wbEraser" title="Eraser"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m7 21-4.3-4.3c-1-1-1-2.5 0-3.4l9.6-9.6c1-1 2.5-1 3.4 0l5.6 5.6c1 1 1 2.5 0 3.4L13 21"/><path d="M22 21H7"/><path d="m5 11 9 9"/></svg></button>
     </div>
     <div class="wb-sep"></div>
     <div class="wb-grp" id="wbSwatches">
@@ -1035,21 +1037,25 @@ body.dark .page.lnk-hot .lnk b.on{background:rgba(56,189,248,.2);box-shadow:inse
     </div>
     <div class="wb-sep"></div>
     <div class="wb-grp">
-      <button id="wbUndo" title="Undo"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 14L4 9l5-5"/><path d="M4 9h11a5 5 0 0 1 0 10h-3"/></svg></button>
-      <button id="wbRedo" title="Redo"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 14l5-5-5-5"/><path d="M20 9H9a5 5 0 0 0 0 10h3"/></svg></button>
-      <button id="wbClear" title="Clear board"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      <button id="wbUndo" title="Undo"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/></svg></button>
+      <button id="wbRedo" title="Redo"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 14 5-5-5-5"/><path d="M20 9H9.5a5.5 5.5 0 0 0 0 11H13"/></svg></button>
+      <button id="wbClear" title="Clear board"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M10 11v6"/><path d="M14 11v6"/></svg></button>
     </div>
     <div class="wb-sep"></div>
     <div class="wb-grp wb-pages">
-      <button id="wbPrev" title="Previous page"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+      <button id="wbPrev" title="Previous page"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
       <span id="wbPageN">1 / 1</span>
-      <button id="wbNext" title="Next page"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
-      <button id="wbAddPage" title="Add page"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/><path d="M14 3v5h5"/><path d="M12 11v6M9 14h6"/></svg></button>
+      <button id="wbNext" title="Next page"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+      <button id="wbAddPage" title="Add page"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M9 15h6"/><path d="M12 12v6"/></svg></button>
       <button id="wbBg" title="Page background colour" style="background:#ffffff"></button>
     </div>
     <div class="wb-sep"></div>
     <div class="wb-grp">
-      <button id="wbExport" title="Export the whiteboard as a PDF">Export as PDF</button>
+      <button id="wbExport" title="Export the whiteboard as a PDF"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>Export as PDF</button>
+    </div>
+    <div class="wb-sep"></div>
+    <div class="wb-grp">
+      <button id="wbClose" title="Close the whiteboard"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
     </div>
     <div id="wbBgPop">
       <button class="wb-bgc on" data-bg="#ffffff" title="White" style="background:#ffffff"></button>
@@ -3813,7 +3819,7 @@ function expBarReset(){const b=$('expBar');if(b)b.style.width='0%'}
  document.addEventListener('mousemove',e=>{if(!st)return;if(!(e.buttons&1)){end();return}st.x=e.clientX;st.y=e.clientY;st.dirty=true},true);
  document.addEventListener('mouseup',end,true);addEventListener('blur',end);
 
- /* ---- touch: long-press (or double-tap) a word, then drag the two round handles ---- */
+ /* ---- touch: long-press a word, then drag the two round handles ---- */
  const hS=document.createElement('div'),hE=document.createElement('div');hS.className=hE.className='sel-h';document.body.append(hS,hE);
  let prog=0,hDrag=null,lp=null,lastTap={t:0,x:0,y:0},noMouse=0;
  const touchUI=()=>ptype==='touch'||document.body.classList.contains('touch');
@@ -3853,9 +3859,9 @@ function expBarReset(){const b=$('expBar');if(b)b.style.width='0%'}
   if(!sc.contains(e.target)||e.target.closest('.cmpin,.sigbox,button,input,textarea,select,.lnks a'))return;
   const x=e.clientX,y=e.clientY,now=Date.now();
   if(lp)clearTimeout(lp.t);lp=null;
-  if(now-lastTap.t<320&&Math.hypot(x-lastTap.x,y-lastTap.y)<26){lastTap.t=0;pickWord(x,y);return}
+  if(now-lastTap.t<320&&Math.hypot(x-lastTap.x,y-lastTap.y)<26){lastTap={t:now,x,y};window.App&&App.dockTap&&App.dockTap(x,y);return}
   lastTap={t:now,x,y};
-  lp={id:e.pointerId,x,y,t:setTimeout(()=>{lp=null;if(document.body.classList.contains('touch')){noMouse=Infinity;window.App&&App.dockGrab&&App.dockGrab(x,y)}else pickWord(x,y)},420)};
+  lp={id:e.pointerId,x,y,t:setTimeout(()=>{lp=null;pickWord(x,y)},420)};
  },true);
  document.addEventListener('pointermove',e=>{if(lp&&e.pointerId===lp.id&&Math.hypot(e.clientX-lp.x,e.clientY-lp.y)>10){clearTimeout(lp.t);lp=null}},true);
  const lpEnd=e=>{if(lp&&e.pointerId===lp.id){clearTimeout(lp.t);lp=null}if(e.pointerType==='touch'&&noMouse===Infinity)noMouse=Date.now()+800};
@@ -4209,6 +4215,7 @@ if(wbCv){
  wbCv.addEventListener('pointercancel',wbEnd);
 }
 if($('wbPen'))$('wbPen').onclick=()=>wbSetTool('pen');
+if($('wbClose'))$('wbClose').onclick=()=>toggleWb();
 if($('wbEraser'))$('wbEraser').onclick=()=>wbSetTool('eraser');
 if($('wbSize'))$('wbSize').addEventListener('input',()=>{wbW=+$('wbSize').value||4});
 const wbSw=$('wbSwatches');
@@ -4317,8 +4324,20 @@ function wbClosed(d){
 addEventListener('resize',()=>{try{if(document.body.classList.contains('wb-on'))wbResize()}catch(e){}});
 
 /* ---------- touch-mode dock gestures ---------- */
-/* long-press anywhere moves the dock to that spot; a one-finger rotation
-   (turning your finger like a dial) snaps it back to the default centre-bottom */
+/* double-tap anywhere moves the dock to that spot; a triple-tap
+   snaps it back to the default centre-bottom */
+let dkTapAt=0,dkTapT=0;
+function dockTap(x,y){
+ const now=Date.now();
+ if(now-dkTapAt<320){
+  clearTimeout(dkTapT);dkTapT=0;dkTapAt=0;
+  if(navigator.vibrate)try{navigator.vibrate(12)}catch(e){}
+  dockDefault();
+ }else{
+  dkTapAt=now;
+  dkTapT=setTimeout(()=>{dkTapT=0;dkTapAt=0;dockGrab(x,y)},320);
+ }
+}
 function dockGrab(x,y){
  const tb=$('toolbar');if(!tb)return;
  try{U.closeAllPopovers()}catch(e){}
@@ -4338,35 +4357,6 @@ function dockDefault(){
   if(navigator.vibrate)try{navigator.vibrate(12)}catch(e){}
  }catch(e){}
 }
-let rotId=null,rotPts=[],rotLast=0,rotAt=0;
-function rotMove(e){
- if(!document.body.classList.contains('touch')||e.pointerType!=='touch'||e.pointerId!==rotId)return;
- const now=Date.now();
- if(now-rotLast>320)rotPts=[];
- rotLast=now;
- rotPts.push({x:e.clientX,y:e.clientY,t:now});
- if(rotPts.length>60)rotPts.shift();
- if(now-rotAt<1500)return;
- const w=rotPts;
- if(w.length<12)return;
- let dir=null,turn=0,len=0;
- for(let i=1;i<w.length;i++){
-  const dx=w[i].x-w[i-1].x,dy=w[i].y-w[i-1].y,d2=dx*dx+dy*dy;
-  if(d2<4)continue;
-  len+=Math.sqrt(d2);
-  const a=Math.atan2(dy,dx);
-  if(dir!=null){let d=a-dir;while(d>Math.PI)d-=2*Math.PI;while(d<-Math.PI)d+=2*Math.PI;turn+=d}
-  dir=a}
- if(len>=80&&Math.abs(turn)>=4){rotAt=now;rotPts=[];dockDefault()}
-}
-document.addEventListener('pointerdown',e=>{
- if(!document.body.classList.contains('touch')||e.pointerType!=='touch')return;
- if(rotId===null){rotId=e.pointerId;rotPts=[{x:e.clientX,y:e.clientY,t:Date.now()}];rotLast=Date.now()}
-},true);
-document.addEventListener('pointermove',e=>{try{rotMove(e)}catch(_){}},true);
-const rotEnd=e=>{if(e.pointerId===rotId){rotId=null;rotPts=[]}};
-document.addEventListener('pointerup',rotEnd,true);
-document.addEventListener('pointercancel',rotEnd,true);
 
 /* ---------- thumbnail quick-zoom (long-press) ---------- */
 let peekT=null,peekXY=null,peekSup=false,peekTok=0;
@@ -4452,7 +4442,7 @@ setInterval(checkRamPressure,20000);
  const up=()=>{drag=false;fs.classList.remove('drag');show()};
  th.addEventListener('pointerup',up);th.addEventListener('pointercancel',up);
 }
-window.App={renderPane,updatePill,goto,hasDoc:()=>!!cur,pick,clearAnnotations,toggleSplit,toggleWb,dockGrab,dockDefault,wbClosed};
+window.App={renderPane,updatePill,goto,hasDoc:()=>!!cur,pick,clearAnnotations,toggleSplit,toggleWb,dockGrab,dockDefault,dockTap,wbClosed};
 updatePill();renderPane();
 const qf=new URLSearchParams(location.search).get('file');
 if(qf)openUrl(qf,decodeURIComponent(qf.split('?')[0].split('/').pop()||'document.pdf'));
