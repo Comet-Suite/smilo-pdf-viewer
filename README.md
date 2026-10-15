@@ -110,7 +110,7 @@ Smilo is in **beta testing** and is **not yet released**. The desktop applicatio
 
 ## Feedback
 
-Found a rough edge or have an idea? [Open an issue](https://github.com/Comet-Suite/smilo-pdf-viewer/issues) — beta feedback directly shapes the release.
+Found a rough edge or have an idea? [Open an issue](https://github.com/Comet-Suite/smilo-pdf-viewer/issues) — beta feedback directly shapes the beta.
 
 ---
 
