@@ -32,6 +32,9 @@ Try the full experience right in your browser — open any PDF from your device 
 | **[Open the live demo →](https://comet-suite.github.io/smilo-pdf-viewer/)** | The complete app, ready to use |
 | **[Beta build (with release notice) →](https://comet-suite.github.io/smilo-pdf-viewer/smilo-beta.html)** | The preview build that shows the pre-release notice |
 
+> [!WARNING]
+> **Do not upload private or sensitive documents.** Never open personal files in the web demo — identity cards, passports, bank statements, tax or medical records, contracts, or anything containing personal data. Try Smilo with non-sensitive documents only.
+
 ## Screenshots
 
 <p align="center">
