@@ -6,9 +6,9 @@
 
 ### The PDF reader built for focus.
 
-A modern PDF reader and annotation studio — read, mark up, split, sketch, and export.
+A modern PDF reader and annotation studio — read, mark up, merge, split, redact, sketch, and export.
 
-[![Status](https://img.shields.io/badge/status-beta-2563eb?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/#status)
+[![Status](https://img.shields.io/badge/status-released-16a34a?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/#status)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-0284c7?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/#availability)
 [![Demo](https://img.shields.io/badge/live-demo-e11d48?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/)
 
@@ -20,7 +20,6 @@ A modern PDF reader and annotation studio — read, mark up, split, sketch, and 
 
 Smilo is a fast, thoughtfully designed PDF reader with a complete annotation toolkit at its heart. Open documents in tabs, mark them up with pen and highlighter, split the view to keep two sections of a document on screen, brainstorm on the built-in multi-page whiteboard, and export your work — all in a clean interface that stays out of your way.
 
-> **Beta notice** — Smilo is currently in **beta testing** and has **not been released yet**. It is **coming soon, exclusively for Windows 10/11**.
 
 ## Live demo
 
@@ -28,7 +27,7 @@ Try the full experience right in your browser — open any PDF from your device 
 
 | | |
 |---|---|
-| **[Open the beta demo →](https://comet-suite.github.io/smilo-pdf-viewer/)** | The current beta build — the beta notice is shown on launch |
+| **[Open the demo →](https://comet-suite.github.io/smilo-pdf-viewer/)** | The full version — open any PDF from your device and explore |
 
 > [!WARNING]
 > **Do not upload private or sensitive documents.** Never open personal files in the web demo — identity cards, passports, bank statements, tax or medical records, contracts, or anything containing personal data. Try Smilo with non-sensitive documents only — until the full Windows version comes.
@@ -81,6 +80,12 @@ Try the full experience right in your browser — open any PDF from your device 
 - Text and image watermarks across every page
 - One-tap removal of all annotations
 
+### PDF tools (normal mode)
+- Merge PDFs — combine several files in any order, trim each with page ranges
+- Split PDF — break one document into many: every N pages, custom ranges, or every page
+- Redact PDF — mark sensitive areas and export with those areas removed from the page
+- These tools run in normal (mouse) mode; they are not available in touch mode
+
 ### Whiteboard
 - Built-in multi-page whiteboard alongside your document
 - Custom page colours — presets or any colour you choose
@@ -100,17 +105,17 @@ Try the full experience right in your browser — open any PDF from your device 
 |---|---|
 | Windows 10 | Coming soon |
 | Windows 11 | Coming soon |
-| Web demo | Available now — beta |
+| Web demo | Available now |
 
-Smilo is in **beta testing** and is **not yet released**. The desktop application will be available **for Windows 10/11 only**.
+The full web version is available now. The desktop application is coming soon for Windows 10/11 only.
 
 ## Status
 
-**Beta** — actively in testing. The live demo in this repository reflects the current beta build.
+**Released** — the live demo in this repository runs the full version. The desktop application is coming soon for Windows 10/11 only.
 
 ## Feedback
 
-Found a rough edge or have an idea? [Open an issue](https://github.com/Comet-Suite/smilo-pdf-viewer/issues) — beta feedback directly shapes the beta.
+Found a rough edge or have an idea? [Open an issue](https://github.com/Comet-Suite/smilo-pdf-viewer/issues) — feedback directly shapes the app.
 
 ---
 
