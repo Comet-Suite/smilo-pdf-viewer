@@ -973,25 +973,38 @@ body.dark .page.lnk-hot .lnk b.on{background:rgba(56,189,248,.2);box-shadow:inse
 /* ---- pdf toolkit: merge / split / redact ---- */
 .tk-card{width:min(560px,92vw);text-align:left}
 .tk-card h2{text-align:center}
-.tk-note{color:var(--text-muted);font-size:12.5px;line-height:1.55;margin:0 0 12px}
-.tk-list{display:flex;flex-direction:column;gap:6px;margin:8px 0;max-height:230px;overflow:auto}
-.tk-list .tk-empty{color:var(--text-muted);font-size:12px;padding:8px 2px}
-.tk-row{display:flex;align-items:center;gap:6px;background:var(--surface-hover);border:1.5px solid var(--border);border-radius:10px;padding:6px 8px}
-.tk-row .tk-name{font-size:12px;max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1}
-.tk-row .tk-cnt{color:var(--text-muted);font-size:11px;min-width:40px}
-.tk-mini{background:transparent;border:1.5px solid var(--border);color:var(--text);border-radius:7px;width:24px;height:24px;cursor:pointer;font-size:12px;line-height:1;flex:none}
-.tk-mini:hover{background:var(--surface-active)}
-.tk-inp{background:var(--surface);border:1.5px solid var(--border);color:var(--text);border-radius:8px;padding:7px 10px;font-size:12.5px;font-family:inherit;outline:none}
-.tk-inp:focus{border-color:var(--accent)}
-.tk-mode{display:flex;align-items:center;gap:7px;font-size:12.5px;margin:7px 0;cursor:pointer}
-.tk-mode .tk-inp{margin-left:auto}
+.tk-card .tk-note{color:var(--text-muted);font-size:12.5px;line-height:1.55;margin:2px 0 14px;display:block}
+.tk-card .fld{margin-bottom:12px}
+.tk-card .fld label{white-space:nowrap}
+.tk-card .fld .tk-name{font-size:12.5px;color:var(--text-muted);max-width:60%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tk-card .tk-list{display:flex;flex-direction:column;gap:6px;margin:10px 0 14px;max-height:230px;overflow:auto}
+.tk-card .tk-list .tk-empty{color:var(--text-muted);font-size:12px;padding:10px 2px}
+.tk-card .tk-row{display:flex;align-items:center;gap:6px;background:var(--surface-2);border:1.5px solid var(--border);border-radius:10px;padding:6px 8px}
+.tk-card .tk-row .tk-name{font-size:12px;max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1}
+.tk-card .tk-row .tk-cnt{color:var(--text-muted);font-size:11px;min-width:40px;white-space:nowrap}
+.tk-card .tk-mini{background:transparent;border:1.5px solid var(--border);color:var(--text);border-radius:7px;width:24px;height:24px;cursor:pointer;font-size:12px;line-height:1;flex:none;display:inline-flex;align-items:center;justify-content:center;padding:0}
+.tk-card .tk-mini:hover{background:var(--surface-hover)}
+.tk-card input.tk-inp{width:auto;min-width:0;margin:0;padding:8px 10px;border:1.5px solid var(--border);border-radius:10px;background:var(--surface-2);color:var(--text);font:13px inherit;font-family:inherit;outline:none;flex:0 1 auto}
+.tk-card input.tk-inp:focus{border-color:var(--accent)}
+.tk-card .fld input.tk-inp{flex:0 0 58%;width:58%;font-size:14px;padding:8px 10px}
+.tk-card .fld .pop-btn.flat{width:auto;flex:none;justify-content:center;padding:8px 14px;border-radius:999px;font-size:12.5px;font-weight:600;background:var(--surface-2);border:1.5px solid var(--border)}
+.tk-card .tk-row input.tk-inp{flex:none;width:128px;font-size:12px;padding:7px 9px}
+.tk-card input[type=radio],.tk-card input[type=checkbox]{flex:none;width:auto;height:auto;margin:0;padding:0;accent-color:var(--accent);cursor:pointer}
+.tk-card .tk-modes{margin:6px 0 14px;display:flex;flex-direction:column;gap:9px}
+.tk-card .tk-mode{display:flex;align-items:center;gap:9px;font-size:12.5px;cursor:pointer;line-height:1.4}
+.tk-card .tk-mode .tk-txt{white-space:nowrap}
+.tk-card .tk-mode input.tk-inp{flex:none;font-size:12px;padding:7px 9px}
+.tk-card .tk-mode .tk-num{width:56px;text-align:center}
+.tk-card .tk-mode .tk-range{width:150px}
+.tk-card .dlg-btns{margin-top:16px}
 #rdBar{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:155;display:flex;align-items:center;gap:8px;background:var(--surface);border:1.5px solid var(--border);border-radius:14px;padding:8px 11px;box-shadow:var(--shadow-pop);flex-wrap:wrap;max-width:calc(100vw - 20px)}
 #rdBar .tk-k{color:var(--text-muted);font-size:12px;font-weight:600}
-#rdBar #rdCount{font-size:12px;font-weight:600;color:var(--text)}
-#rdBar .tk-lbl{font-size:11px;color:var(--text-muted);display:flex;align-items:center;gap:4px;cursor:pointer}
-#rdBar .rd-sw{width:19px;height:19px;border-radius:6px;border:2px solid var(--border);cursor:pointer;display:inline-block}
+#rdBar #rdCount{font-size:12px;font-weight:600;color:var(--text);white-space:nowrap}
+#rdBar .tk-lbl{font-size:11px;color:var(--text-muted);display:flex;align-items:center;gap:5px;cursor:pointer;white-space:nowrap}
+#rdBar .tk-lbl input{width:auto;height:auto;margin:0;padding:0;accent-color:var(--accent)}
+#rdBar .rd-sw{width:19px;height:19px;border-radius:6px;border:2px solid var(--border);cursor:pointer;display:inline-block;flex:none}
 #rdBar .rd-sw.on{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-soft)}
-#rdBar .pop-btn.flat{width:auto;justify-content:center;padding:7px 12px;border-radius:999px;font-size:11.5px;font-weight:600}
+#rdBar .pop-btn.flat{width:auto;justify-content:center;padding:7px 12px;border-radius:999px;font-size:11.5px;font-weight:600;white-space:nowrap}
 body.rdm #pages{cursor:crosshair}
 body.touch .tool-btn[data-tool="merge"],body.touch .tool-btn[data-tool="splitpdf"],body.touch .tool-btn[data-tool="redact"]{display:none}
 </style>
@@ -5034,7 +5047,7 @@ function openMerge(){
       '<button class="tk-mini" data-act="down" title="Move down">&#8595;</button>'+
       '<span class="tk-name" title="'+esc(f.name)+'">'+esc(f.name)+'</span>'+
       '<span class="tk-cnt">'+(f.count==null?'…':(f.err?esc(f.err):f.count+' pp'))+'</span>'+
-      '<input class="tk-inp" data-act="range" style="width:130px" placeholder="all (e.g. 1-3,5)" value="'+esc(f.range||'')+'">'+
+      '<input class="tk-inp" data-act="range" placeholder="all (e.g. 1-3,5)" value="'+esc(f.range||'')+'">'+
       '<button class="tk-mini" data-act="del" title="Remove">&#215;</button></div>').join('');
   }
   render();
@@ -5093,9 +5106,11 @@ function openSplit(){
    '<h2>Split PDF</h2>'+
    '<p class="tk-note">Break this document into several PDFs. Each part is downloaded as its own file.</p>'+
    '<div class="fld"><label>Source</label><span class="tk-name">'+esc(cur.name)+' — '+cur.n+' pages</span></div>'+
-   '<label class="tk-mode"><input type="radio" name="tkSplMode" value="every" checked> Every N pages: <input class="tk-inp" id="splEvery" value="2" style="width:56px"></label>'+
-   '<label class="tk-mode"><input type="radio" name="tkSplMode" value="ranges"> Page ranges &#8594; one file per range: <input class="tk-inp" id="splRanges" placeholder="e.g. 1-3,4-6" style="width:140px"></label>'+
-   '<label class="tk-mode"><input type="radio" name="tkSplMode" value="each"> Every single page</label>'+
+   '<div class="tk-modes">'+
+   '<label class="tk-mode"><input type="radio" name="tkSplMode" value="every" checked><span class="tk-txt">Every N pages:</span><input class="tk-inp tk-num" id="splEvery" value="2"></label>'+
+   '<label class="tk-mode"><input type="radio" name="tkSplMode" value="ranges"><span class="tk-txt">Page ranges &#8594; one file per range:</span><input class="tk-inp tk-range" id="splRanges" placeholder="e.g. 1-3,4-6"></label>'+
+   '<label class="tk-mode"><input type="radio" name="tkSplMode" value="each"><span class="tk-txt">Every single page</span></label>'+
+   '</div>'+
    '<div class="fld" style="margin-top:10px"><label>Base name</label><input class="tk-inp" id="splName" value="'+esc(nm)+'"></div>'+
    '<div class="dlg-btns"><button class="pop-btn flat" id="splNo">Cancel</button>'+
    '<button class="open-btn" id="splOk">Create &amp; download</button></div>');
