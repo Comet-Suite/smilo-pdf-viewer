@@ -6,7 +6,7 @@
 
 ### The PDF reader built for focus.
 
-A modern PDF reader and annotation studio — read, mark up, merge, split, redact, sketch, and export.
+A modern PDF reader and annotation studio — read, listen, mark up, merge, split, redact, sketch and organise.
 
 [![Status](https://img.shields.io/badge/status-released-16a34a?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/#status)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-0284c7?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/#availability)
@@ -18,7 +18,7 @@ A modern PDF reader and annotation studio — read, mark up, merge, split, redac
 
 ## Overview
 
-Smilo is a fast, thoughtfully designed PDF reader with a complete annotation toolkit at its heart. Open documents in tabs, mark them up with pen and highlighter, split the view to keep two sections of a document on screen, brainstorm on the built-in multi-page whiteboard, and export your work — all in a clean interface that stays out of your way.
+Smilo is a fast, thoughtfully designed PDF reader with a complete annotation toolkit at its heart. Open documents in tabs, mark them up with pen and highlighter, split the view to keep two sections of a document on screen, brainstorm on the built-in multi-page whiteboard, and export your work — all in a clean interface that stays out of your way. Version 2.0 adds read aloud, cloud documents, stamps and callouts, page organisation and a layout built for phones.
 
 
 ## Live demo
@@ -80,11 +80,26 @@ Try the full experience right in your browser — open any PDF from your device 
 - Text and image watermarks across every page
 - One-tap removal of all annotations
 
+- Stamps — Approved, Reviewed, Draft, Confidential, Paid and Void, placed and sized anywhere
+- Callouts — a note bubble with an arrow pointing at the exact spot it refers to
+
 ### PDF tools (normal mode)
 - Merge PDFs — combine several files in any order, trim each with page ranges
 - Split PDF — break one document into many: every N pages, custom ranges, or every page
 - Redact PDF — mark sensitive areas and export with those areas removed from the page
+- Organize pages — reorder by dragging, rotate, delete or extract pages; your annotations can be included in the saved file
 - These tools run in normal (mouse) mode; they are not available in touch mode
+
+### Read aloud
+- Reads the document out loud with the current sentence highlighted on the page
+- Choose the voice and speed, skip a sentence back or forward, pause any time
+
+### Cloud documents
+- Open and save PDFs in Google Drive, OneDrive and Dropbox
+- Files travel straight between your browser and your own account; no copy is kept anywhere else
+
+### On phones and tablets
+- The interface adapts to small screens — the tool dock moves to the bottom, dialogs resize, and every control stays reachable
 
 ### Whiteboard
 - Built-in multi-page whiteboard alongside your document
@@ -111,7 +126,7 @@ The full web version is available now. The desktop application is coming soon fo
 
 ## Status
 
-**Released** — the live demo in this repository runs the full version. The desktop application is coming soon for Windows 10/11 only.
+**Released** — the live demo in this repository runs version 2.0. Check for updates any time with Ctrl + Shift + U (Command + Shift + U on macOS). The desktop application is coming soon for Windows 10/11 only.
 
 ## Feedback
 
