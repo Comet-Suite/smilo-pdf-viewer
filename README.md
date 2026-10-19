@@ -9,6 +9,7 @@
 A modern PDF reader and annotation studio — read, listen, mark up, merge, split, redact, sketch and organise.
 
 [![Status](https://img.shields.io/badge/status-released-16a34a?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/#status)
+[![Version](https://img.shields.io/badge/version-2.0-0284c7?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-0284c7?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/#availability)
 [![Demo](https://img.shields.io/badge/live-demo-e11d48?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/)
 
@@ -18,8 +19,9 @@ A modern PDF reader and annotation studio — read, listen, mark up, merge, spli
 
 ## Overview
 
-Smilo is a fast, thoughtfully designed PDF reader with a complete annotation toolkit at its heart. Open documents in tabs, mark them up with pen and highlighter, split the view to keep two sections of a document on screen, brainstorm on the built-in multi-page whiteboard, and export your work — all in a clean interface that stays out of your way. Version 2.0 adds read aloud, cloud documents, stamps and callouts, page organisation and a layout built for phones.
+Smilo is a fast, thoughtfully designed PDF reader with a complete annotation toolkit at its heart. Open documents in tabs, mark them up with pen and highlighter, split the view to keep two sections of a document on screen, brainstorm on the built-in multi-page whiteboard, and export your work — all in a clean interface that stays out of your way.
 
+Version 2.0 adds read aloud, cloud documents, stamps and callouts, a page organizer, and a layout built for phones and tablets.
 
 ## Live demo
 
@@ -27,7 +29,8 @@ Try the full experience right in your browser — open any PDF from your device 
 
 | | |
 |---|---|
-| **[Open the demo →](https://comet-suite.github.io/smilo-pdf-viewer/)** | The full version — open any PDF from your device and explore |
+| **[Open the demo →](https://comet-suite.github.io/smilo-pdf-viewer/)** | The full version — every tool, with a print settings window before printing |
+| **[Direct-print build →](https://comet-suite.github.io/smilo-pdf-viewer/direct-print.html)** | The same reader, but Print goes straight to your browser's print dialog |
 
 > [!WARNING]
 > **Do not upload private or sensitive documents.** Never open personal files in the web demo — identity cards, passports, bank statements, tax or medical records, contracts, or anything containing personal data. Try Smilo with non-sensitive documents only — until the full Windows version comes.
@@ -77,29 +80,35 @@ Try the full experience right in your browser — open any PDF from your device 
 - Pen, highlighter and eraser with per-tool colours
 - Comments pinned to any spot on a page
 - Signature tool
+- Stamps — Approved, Reviewed, Draft, Confidential, Paid and Void, placed and sized anywhere
+- Callouts — a note bubble with an arrow pointing at the exact spot it refers to
 - Text and image watermarks across every page
 - One-tap removal of all annotations
 
-- Stamps — Approved, Reviewed, Draft, Confidential, Paid and Void, placed and sized anywhere
-- Callouts — a note bubble with an arrow pointing at the exact spot it refers to
+### Read aloud
+- Reads the document out loud, highlighting each sentence on the page as it speaks
+- Choose the voice and the speed, jump a sentence back or forward, pause and resume
+- Starts from the page you are looking at and keeps scrolling with the text
 
 ### PDF tools (normal mode)
 - Merge PDFs — combine several files in any order, trim each with page ranges
 - Split PDF — break one document into many: every N pages, custom ranges, or every page
 - Redact PDF — mark sensitive areas and export with those areas removed from the page
-- Organize pages — reorder by dragging, rotate, delete or extract pages; your annotations can be included in the saved file
+- Organize pages — drag to reorder, then rotate, delete or extract pages; your annotations can be included in the saved copy
 - These tools run in normal (mouse) mode; they are not available in touch mode
 
-### Read aloud
-- Reads the document out loud with the current sentence highlighted on the page
-- Choose the voice and speed, skip a sentence back or forward, pause any time
+### Printing
+- Full build: a print window with a page preview, page range, copies, two-sided printing, paper size, margins, scale, orientation, colour and quality
+- Direct-print build: Print goes straight to the browser's own print dialog
+- Annotations, signatures and watermarks are printed exactly as they appear on screen
 
 ### Cloud documents
 - Open and save PDFs in Google Drive, OneDrive and Dropbox
-- Files travel straight between your browser and your own account; no copy is kept anywhere else
+- Files travel straight between your browser and your own account — no copy is kept anywhere else
 
 ### On phones and tablets
-- The interface adapts to small screens — the tool dock moves to the bottom, dialogs resize, and every control stays reachable
+- The interface adapts to small screens — the tool dock moves to the bottom and scrolls, dialogs reflow to one column, and every control stays reachable with a thumb
+- Safe-area spacing for notched screens, plus a tighter layout in landscape
 
 ### Whiteboard
 - Built-in multi-page whiteboard alongside your document
@@ -113,6 +122,25 @@ Try the full experience right in your browser — open any PDF from your device 
 - Gestures: long-press to move the dock, one-finger rotation to snap it back to centre
 - Quick-scroll circle and pinch zoom
 - Dark mode, page invert, repositionable dock
+
+### About & updates
+- A tidy About window with Overview, Features, Shortcuts, Privacy and Updates
+- **Ctrl + Shift + U** (Command + Shift + U on macOS) checks for a newer version
+- A Website button that opens the live demo
+
+## Features that need setup or may not work
+
+Some of this version depends on things outside the app. Nothing here is broken by design — it simply needs an account, a device or the desktop build to work.
+
+| Feature | Status | What it needs |
+|---|---|---|
+| **Cloud documents** | **Not configured out of the box** | Each provider (Google Drive, OneDrive, Dropbox) requires its own free app ID. Open the cloud window, paste the client ID once, and it is remembered on that device. Until then the window only shows the setup steps. The redirect address shown there must also be added to that provider's app settings, so cloud works from the published site — not from a file opened straight off the disk. Google apps that are not yet verified also need the account added under test users. |
+| **iCloud** | Not available | Apple offers no web access to a user's iCloud Drive. On iPhone and Mac the system file picker still reaches iCloud — use Open file instead. |
+| **Direct printing to a printer** | Browser limit | A web page cannot list or talk to printers, so in the browser Print always opens the system print dialog. Choosing a device and sending the job silently needs the desktop application. |
+| **Read aloud** | Depends on your device | It uses the voices installed in your browser and operating system. Voice names, quality and languages differ between Windows, macOS, Android and iOS, and some browsers need a tap before speech starts. |
+| **Check for updates** | Needs internet | The check compares this copy with the published version file in this repository. Offline, or behind a strict network, it reports that it could not check. |
+| **Share links & collaboration** | Not in this version | Generating a link that opens for other people on any device needs a hosting service behind it. That is planned, not present. |
+| **Scanned documents** | Text only where the PDF has it | Read aloud, search and selection work on documents that carry text. A scanned page is an image, so there is nothing to read until it is scanned with text recognition. |
 
 ## Availability
 
