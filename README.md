@@ -8,10 +8,10 @@
 
 A modern PDF reader and annotation studio — read, listen, mark up, merge, split, redact, sketch and organise.
 
-[![Status](https://img.shields.io/badge/status-released-16a34a?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/#status)
-[![Version](https://img.shields.io/badge/version-2.0-0284c7?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/)
-[![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-0284c7?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/#availability)
-[![Demo](https://img.shields.io/badge/live-demo-e11d48?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/)
+[![Status](https://img.shields.io/badge/status-released-16a34a?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/direct-print.html#status)
+[![Version](https://img.shields.io/badge/version-2.0-0284c7?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/direct-print.html)
+[![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-0284c7?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/direct-print.html#availability)
+[![Demo](https://img.shields.io/badge/live-demo-e11d48?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/direct-print.html)
 
 </div>
 
@@ -29,8 +29,7 @@ Try the full experience right in your browser — open any PDF from your device 
 
 | | |
 |---|---|
-| **[Open the demo →](https://comet-suite.github.io/smilo-pdf-viewer/)** | The full version — every tool, with a print settings window before printing |
-| **[Direct-print build →](https://comet-suite.github.io/smilo-pdf-viewer/direct-print.html)** | The same reader, but Print goes straight to your browser's print dialog |
+| **[Open the demo →](https://comet-suite.github.io/smilo-pdf-viewer/direct-print.html)** | The full reader — every tool. Print goes straight to your browser's print dialog |
 
 > [!WARNING]
 > **Do not upload private or sensitive documents.** Never open personal files in the web demo — identity cards, passports, bank statements, tax or medical records, contracts, or anything containing personal data. Try Smilo with non-sensitive documents only — until the full Windows version comes.
