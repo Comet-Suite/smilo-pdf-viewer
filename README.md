@@ -9,7 +9,7 @@
 A modern PDF reader and annotation studio — read, listen, mark up, merge, split, redact, sketch and organise.
 
 [![Status](https://img.shields.io/badge/status-released-16a34a?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/direct-print.html#status)
-[![Version](https://img.shields.io/badge/version-2.0-0284c7?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/direct-print.html)
+[![Version](https://img.shields.io/badge/version-2.1-0284c7?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/direct-print.html)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-0284c7?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/direct-print.html#availability)
 [![Demo](https://img.shields.io/badge/live-demo-e11d48?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/direct-print.html)
 
@@ -21,7 +21,7 @@ A modern PDF reader and annotation studio — read, listen, mark up, merge, spli
 
 Smilo is a fast, thoughtfully designed PDF reader with a complete annotation toolkit at its heart. Open documents in tabs, mark them up with pen and highlighter, split the view to keep two sections of a document on screen, brainstorm on the built-in multi-page whiteboard, and export your work — all in a clean interface that stays out of your way.
 
-Version 2.0 adds read aloud, cloud documents, stamps and callouts, a page organizer, and a layout built for phones and tablets.
+Version 2.1 adds read aloud, stamps and callouts, a page organizer, a layout built for phones and tablets, and a full drawing board with shapes, text and page templates.
 
 ## Live demo
 
@@ -69,7 +69,7 @@ Try the full experience right in your browser — open any PDF from your device 
 
 ### Reading
 - Smooth page rendering with precise zoom, fit-width and fit-page controls
-- Multi-document tabs — keep several PDFs open and switch instantly
+- Multi-document tabs — keep several PDFs open, switch instantly, and close them all in one tap
 - Page thumbnails with a sharp quick-preview on long-press
 - Document outline, bookmarks and instant page jump
 - Text selection with touch-friendly handles; search with match navigation
@@ -101,19 +101,19 @@ Try the full experience right in your browser — open any PDF from your device 
 - Direct-print build: Print goes straight to the browser's own print dialog
 - Annotations, signatures and watermarks are printed exactly as they appear on screen
 
-### Cloud documents
-- Open and save PDFs in Google Drive, OneDrive and Dropbox
-- Files travel straight between your browser and your own account — no copy is kept anywhere else
-
 ### On phones and tablets
 - The interface adapts to small screens — the tool dock moves to the bottom and scrolls, dialogs reflow to one column, and every control stays reachable with a thumb
 - Safe-area spacing for notched screens, plus a tighter layout in landscape
 
-### Whiteboard
-- Built-in multi-page whiteboard alongside your document
-- Custom page colours — presets or any colour you choose
-- Full drawing toolkit: colours, stroke size, eraser, undo/redo, clear
-- Export the entire board as a PDF
+### Whiteboard (touch mode)
+- A full-page drawing board beside your document, one board per document
+- Pen with smooth, pressure-paced ink; the eraser removes whole shapes it touches
+- Shapes: line, arrow, rectangle and oval, with an optional fill
+- Text notes placed anywhere on the board
+- Page templates — plain, grid, ruled lines or dots
+- Pages: add, duplicate and delete; each page keeps its own background colour and template
+- Six quick colours, stroke size, multi-step undo and redo, clear page
+- Export the whole board as a PDF
 
 ### Multitasking & touch
 - Split view — the same document in two independently scrolling panes
@@ -129,12 +129,10 @@ Try the full experience right in your browser — open any PDF from your device 
 
 ## Features that need setup or may not work
 
-Some of this version depends on things outside the app. Nothing here is broken by design — it simply needs an account, a device or the desktop build to work.
+Some of this version depends on the device or the browser it runs in. Nothing here is broken by design — it simply needs a particular setup to work.
 
 | Feature | Status | What it needs |
 |---|---|---|
-| **Cloud documents** | **Not configured out of the box** | Each provider (Google Drive, OneDrive, Dropbox) requires its own free app ID. Open the cloud window, paste the client ID once, and it is remembered on that device. Until then the window only shows the setup steps. The redirect address shown there must also be added to that provider's app settings, so cloud works from the published site — not from a file opened straight off the disk. Google apps that are not yet verified also need the account added under test users. |
-| **iCloud** | Not available | Apple offers no web access to a user's iCloud Drive. On iPhone and Mac the system file picker still reaches iCloud — use Open file instead. |
 | **Direct printing to a printer** | Browser limit | A web page cannot list or talk to printers, so in the browser Print always opens the system print dialog. Choosing a device and sending the job silently needs the desktop application. |
 | **Read aloud** | Depends on your device | It uses the voices installed in your browser and operating system. Voice names, quality and languages differ between Windows, macOS, Android and iOS, and some browsers need a tap before speech starts. |
 | **Check for updates** | Needs internet | The check compares this copy with the published version file in this repository. Offline, or behind a strict network, it reports that it could not check. |
@@ -153,7 +151,7 @@ The full web version is available now. The desktop application is coming soon fo
 
 ## Status
 
-**Released** — the live demo in this repository runs version 2.0. Check for updates any time with Ctrl + Shift + U (Command + Shift + U on macOS). The desktop application is coming soon for Windows 10/11 only.
+**Released** — the live demo in this repository runs version 2.1. Check for updates any time with Ctrl + Shift + U (Command + Shift + U on macOS). The desktop application is coming soon for Windows 10/11 only.
 
 ## Feedback
 
