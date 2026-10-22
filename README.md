@@ -74,6 +74,7 @@ Try the full experience right in your browser — open any PDF from your device 
 - Document outline, bookmarks and instant page jump
 - Text selection with touch-friendly handles; search with match navigation
 - Your reading position is remembered for every document
+- Open documents live in one list — switch between them, close one, or **Close all** at once
 
 ### Annotation
 - Pen, highlighter and eraser with per-tool colours
@@ -97,9 +98,10 @@ Try the full experience right in your browser — open any PDF from your device 
 - These tools run in normal (mouse) mode; they are not available in touch mode
 
 ### Printing
-- Full build: a print window with a page preview, page range, copies, two-sided printing, paper size, margins, scale, orientation, colour and quality
-- Direct-print build: Print goes straight to the browser's own print dialog
-- Annotations, signatures and watermarks are printed exactly as they appear on screen
+- Print goes straight to the browser's own print dialog — no extra window in the way
+- Every page, in order, with colour and quality as they appear on screen
+- Annotations, signatures, stamps, callouts and watermarks are printed exactly as they look
+- Page preview, page ranges, copies, two-sided printing, paper size and margins need the desktop application, where the printer itself can be asked
 
 ### On phones and tablets
 - The interface adapts to small screens — the tool dock moves to the bottom and scrolls, dialogs reflow to one column, and every control stays reachable with a thumb
@@ -107,12 +109,12 @@ Try the full experience right in your browser — open any PDF from your device 
 
 ### Whiteboard (touch mode)
 - A full-page drawing board beside your document, one board per document
-- Pen with smooth, pressure-paced ink; the eraser removes whole shapes it touches
-- Shapes: line, arrow, rectangle and oval, with an optional fill
+- Pen and highlighter, plus an eraser — six quick colours and an adjustable stroke size
+- Shapes — rectangle, ellipse, line and arrow — drawn with a live preview as you drag
 - Text notes placed anywhere on the board
-- Page templates — plain, grid, ruled lines or dots
-- Pages: add, duplicate and delete; each page keeps its own background colour and template
-- Six quick colours, stroke size, multi-step undo and redo, clear page
+- Page patterns — plain, grid, dotted or ruled — and any background colour you like
+- Pages: add, duplicate and delete; every page keeps its own background and pattern
+- Undo, redo and clear
 - Export the whole board as a PDF
 
 ### Multitasking & touch
@@ -151,7 +153,7 @@ The full web version is available now. The desktop application is coming soon fo
 
 ## Status
 
-**Released** — the live demo in this repository runs version 2.1. Check for updates any time with Ctrl + Shift + U (Command + Shift + U on macOS). The desktop application is coming soon for Windows 10/11 only.
+**Released** — the live demo in this repository runs version 2.1. Cloud documents (Google Drive, OneDrive and Dropbox) were withdrawn in this release, and the whiteboard gained highlighter, text, shapes, page patterns and page duplicate/delete. Check for updates any time with Ctrl + Shift + U (Command + Shift + U on macOS). The desktop application is coming soon for Windows 10/11 only.
 
 ## Feedback
 
