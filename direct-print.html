@@ -1299,7 +1299,7 @@ body.touch .tool-btn[data-tool="merge"],body.touch .tool-btn[data-tool="splitpdf
 </div></div>
 <div class="modal" id="about"><div class="modal-card ab-card">
   <div class="ab-side">
-    <div class="ab-brand"><img class="about-icon" data-icon alt="" /><h2>Smilo</h2><div class="ver" id="aboutVer">Version 2.1</div></div>
+    <div class="ab-brand"><img class="about-icon" data-icon alt="" /><h2>Smilo</h2><div class="ver" id="aboutVer">Version 2.2</div></div>
     <nav class="ab-nav" id="abNav">
         <button data-pane="overview" class="on"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/></svg> Overview</button>
         <button data-pane="features"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 12.5l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg> Features</button>
@@ -1316,7 +1316,7 @@ body.touch .tool-btn[data-tool="merge"],body.touch .tool-btn[data-tool="splitpdf
       <section data-pane="overview">
         <span class="ab-tag">On-device &middot; No uploads</span>
         <p class="ab-lede">A complete PDF reader that runs entirely inside your browser. Documents are parsed locally &mdash; nothing is uploaded. Rendered pages are prepared in memory so scrolling never shows a blank page, and your reading position, bookmarks, comments, highlights, watermark and signature stay on this device.</p>
-        <div class="ab-row"><span class="k">Version</span><span class="v">2.1</span></div>
+        <div class="ab-row"><span class="k">Version</span><span class="v">2.2</span></div>
         <div class="ab-row"><span class="k">PDF engine</span><span class="v">pdf.js 3.11.174</span></div>
         <div class="ab-row"><span class="k">Storage</span><span class="v">On this device &middot; pages kept in RAM</span></div>
         <div class="ab-note"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/></svg><span>Works offline in your browser &mdash; rendering, text extraction and printing all run locally.</span></div>
@@ -1380,7 +1380,7 @@ body.touch .tool-btn[data-tool="merge"],body.touch .tool-btn[data-tool="splitpdf
           <span class="ab-badge"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M6 9h.01M10 9h.01M14 9h.01M18 9h.01M6 13h.01M10 13h.01M14 13h.01M18 13h.01"/></svg> Ctrl / &#8984; + Shift + U</span>
         </div>
         <div class="ab-sec">Current install</div>
-        <div class="ab-row"><span class="k">Viewer version</span><span class="v">2.1</span></div>
+        <div class="ab-row"><span class="k">Viewer version</span><span class="v">2.2</span></div>
         <div class="ab-row"><span class="k">PDF engine</span><span class="v">pdf.js 3.11.174 (pinned)</span></div>
         <div class="ab-row"><span class="k">Website</span><span class="v"><a href="https://comet-suite.github.io/smilo-pdf-viewer/" target="_blank" rel="noopener" class="ab-link">comet-suite.github.io/smilo-pdf-viewer</a></span></div>
       </section>
@@ -3735,7 +3735,7 @@ function abGo(k){
 $('abNav').addEventListener('click',e=>{const b=e.target.closest('button[data-pane]');if(b)abGo(b.dataset.pane)});
 $('abUpdateBtn').onclick=()=>{about.classList.add('open');abGo('updates')};
 $('abWebBtn').onclick=()=>window.open('https://comet-suite.github.io/smilo-pdf-viewer/','_blank','noopener');
-const SMILO_VER='2.1';
+const SMILO_VER='2.2';
 function verCmp(a,b){const x=String(a).split('.'),y=String(b).split('.');for(let i=0;i<Math.max(x.length,y.length);i++){const d=(+x[i]||0)-(+y[i]||0);if(d)return d>0?1:-1}return 0}
 async function checkUpdates(){
   const res=$('abCheckRes');
