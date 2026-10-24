@@ -9,7 +9,7 @@
 A modern PDF reader and annotation studio — read, listen, mark up, merge, split, redact, sketch and organise.
 
 [![Status](https://img.shields.io/badge/status-released-16a34a?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/direct-print.html#status)
-[![Version](https://img.shields.io/badge/version-2.1-0284c7?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/direct-print.html)
+[![Version](https://img.shields.io/badge/version-2.2-0284c7?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/direct-print.html)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-0284c7?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/direct-print.html#availability)
 [![Demo](https://img.shields.io/badge/live-demo-e11d48?style=flat-square)](https://comet-suite.github.io/smilo-pdf-viewer/direct-print.html)
 
@@ -21,7 +21,7 @@ A modern PDF reader and annotation studio — read, listen, mark up, merge, spli
 
 Smilo is a fast, thoughtfully designed PDF reader with a complete annotation toolkit at its heart. Open documents in tabs, mark them up with pen and highlighter, split the view to keep two sections of a document on screen, brainstorm on the built-in multi-page whiteboard, and export your work — all in a clean interface that stays out of your way.
 
-Version 2.1 adds read aloud, stamps and callouts, a page organizer, a layout built for phones and tablets, and a full drawing board with shapes, text and page templates.
+Version 2.2 adds a page colour picker and movable, resizable board objects, plus read aloud, stamps and callouts, a page organizer, a layout built for phones and tablets, and a full drawing board with shapes, text and page templates.
 
 ## Live demo
 
@@ -114,6 +114,7 @@ Try the full experience right in your browser — open any PDF from your device 
 - Text notes placed anywhere on the board
 - Page patterns — plain, grid, dotted or ruled — and any background colour you like
 - Pages: add, duplicate and delete; every page keeps its own background and pattern
+- Select tool — tap any shape, text or stroke to move it, or drag a corner dot to resize
 - Undo, redo and clear
 - Export the whole board as a PDF
 
@@ -123,6 +124,7 @@ Try the full experience right in your browser — open any PDF from your device 
 - Gestures: long-press to move the dock, one-finger rotation to snap it back to centre
 - Quick-scroll circle and pinch zoom
 - Dark mode, page invert, repositionable dock
+- Page colour — paper white, cream, sepia, cool grey, mint, or any colour you pick (normal mode)
 
 ### About & updates
 - A tidy About window with Overview, Features, Shortcuts, Privacy and Updates
@@ -153,7 +155,7 @@ The full web version is available now. The desktop application is coming soon fo
 
 ## Status
 
-**Released** — the live demo in this repository runs version 2.1. Cloud documents (Google Drive, OneDrive and Dropbox) were withdrawn in this release, and the whiteboard gained highlighter, text, shapes, page patterns and page duplicate/delete. Check for updates any time with Ctrl + Shift + U (Command + Shift + U on macOS). The desktop application is coming soon for Windows 10/11 only.
+**Released** — the live demo in this repository runs version 2.2. Cloud documents (Google Drive, OneDrive and Dropbox) were withdrawn in this release, and the whiteboard gained highlighter, text, shapes, page patterns and page duplicate/delete. Check for updates any time with Ctrl + Shift + U (Command + Shift + U on macOS). The desktop application is coming soon for Windows 10/11 only.
 
 ## Feedback
 
